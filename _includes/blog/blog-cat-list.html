@@ -1,0 +1,13 @@
+<div class="list-group" id="blog-cats-wrap">
+    <div class="list-group-item" id="blog-cats-title">
+        <i class="glyphicon glyphicon-th-large"></i>&nbsp;
+        <b>分类</b>
+        <i class="glyphicon glyphicon-chevron-up pull-right toggle-icon"></i>
+    </div>
+    {% for category in site.categories %}
+    <a href="{{ site.base_path }}/blog/?type=cat&value={{ category | first }}" class="list-group-item">
+        {{ category | first }}
+        <span class="pull-right">[{{ category | last | size }}]</span>
+    </a>
+    {% endfor %}
+</div>

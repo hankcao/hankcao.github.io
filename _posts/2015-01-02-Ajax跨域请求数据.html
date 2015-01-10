@@ -1,0 +1,17 @@
+---
+layout: blog/display
+title: Ajax跨域请求数据
+categories: [JavaScript]
+tags: [javascript,ajax]
+---
+将以下代码应用于ajax方法调用之前
+<pre class="code">
+function() {
+    $.ajaxSettings.xhr = function() {
+    try {
+        return new XMLHttpRequest( { mozSystem: true } );
+    } catch (e) {}
+    };
+}
+</pre>
+注：此段代码仅仅用于Firefox OS下privileged和certified的应用跨域请求数据！

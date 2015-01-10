@@ -1,0 +1,36 @@
+---
+layout: blog/display
+title: Firebug调试
+categories: [工具]
+tags: [firebug,工具]
+---
+<p>日志输出</p>
+<pre class="code">
+console.log();
+console.warn();
+console.error();
+</pre>
+<p>定时器调试</p>
+<pre class="code">
+console.time("");
+console.timeEnd("");
+</pre>
+<p>日志分组</p>
+<pre class="code">
+console.group("");
+console.groupEnd("");
+console.dir(); // 输出对象全部属性及方法
+console.dirxml(); // 显示当前元素的代码结构
+</pre>
+<p>断言</p>
+<pre class="code">
+console.assert(); // 断言 console.assert(20==="20"); 失败
+console.trace(); // 比如函数执行调用情况
+</pre>
+<p>性能</p>
+<pre class="code">
+console.profile();
+console.profileEnd();
+</pre>
+注：其他浏览器使用firebug导入
+<a href="https://getfirebug.com/firebug-lite.js">firebug-lite</a>

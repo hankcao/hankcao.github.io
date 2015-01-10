@@ -1,0 +1,45 @@
+.navbar, .navbar-default {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.service-icon {
+    display: block;
+    min-width: 24px;
+    height: 24px;
+    background-image: url("../images/service-icons.png");
+    background-repeat: no-repeat;
+    margin: 14px 0 14px 15px;
+}
+
+#access-sina-weibo {
+    background-position: 0 0;
+    padding: 0;
+}
+
+#access-oschina {
+    background-position: 0 -24px;
+    padding: 0;
+}
+
+#access-github {
+    background-position: 0 -48px;
+    padding: 0;
+    margin-right: 15px;
+}
+
+pre.prettyprint {
+    margin: 0;
+    border: 0;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    color: #fff;
+    border: solid 1px #ddd;
+}
+pre.prettyprint li {
+    list-style-type: decimal;
+}
+
+#blog-tags-cloud {
+    min-height: 200px;
+}

@@ -1,0 +1,24 @@
+markdown: rdiscount
+
+# website root path
+base_path: http://www.lnkfile.com
+# base_path: http://localhost
+# base_path: http://localhost:4000
+
+# file path
+com_path   : assets/components
+image_path : assets/images
+script_path: assets/javascripts
+plugin_path: assets/plugins
+style_path : assets/styles
+# default theme
+theme_path : assets/themes/default
+
+paginate: 15
+paginate_path: 'blog/page:num'
+
+# file encoding
+encoding: utf-8
+
+# highlight
+highlighter: rouge

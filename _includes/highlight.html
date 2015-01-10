@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css"
+      href="{{ site.base_path }}/{{ site.style_path }}/syntax.css">
+{% highlight js linenos %}
+$(function() {
+    var $cont = $("#content");
+    function factory(obj) {
+        var result = [];
+        var handler = function(obj) {
+            for(var item in obj) {
+            }
+        };
+        handler(obj);
+        return result;
+    }
+});
+{% endhighlight %}

@@ -1,0 +1,6 @@
+# IDE
+.idea/
+
+# jekyll
+_site/
+*jb_bak*

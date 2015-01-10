@@ -1,0 +1,13 @@
+  {% for cat in site.categories %}
+  <div class="list-group">
+    <a href="javascript:void(0);" class="list-group-item active post-cat-name">
+      <b>{{ cat[0] }}</b>
+      <span class="pull-right">({{ cat[1] | size }})</span>
+    </a>
+    {% for blog in cat[1] %}
+      <a href="{{ blog.url }}" class="list-group-item">{{ blog.title }}</a>  
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+<button class="btn btn-default hidden" id="btnBackTop" title="Back to top"><i class="glyphicon glyphicon-eject"></i></button>

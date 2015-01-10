@@ -1,0 +1,94 @@
+*, a:active { outline: none; }
+
+.subnav-wrap { overflow: auto; }
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #00ff00;
+    box-sizing: border-box;
+}
+
+.header nav {
+    border-radius: 0;
+}
+
+#btnBackTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#player-panel #name {
+    width: 160px;
+    line-height: 0;
+}
+
+#player-panel #name marquee {
+    padding: 0;
+    margin: 0;
+    line-height: 1.428571429;
+}
+.content-toolbar { width: 100%; min-height: 50px; padding: 5px 0 5px 0; }
+.content-toolbar button:after,.content-toolbar button:before { content: ""; }
+.content-toolbar #btn-show-block { border-top-right-radius: 0; border-bottom-right-radius: 0; border-right: none; }
+.content-toolbar #btn-show-list { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.footer {  }
+
+/* xs */
+@media screen and (max-width: 767px) {
+    .subnav-row {
+        width: 60%;
+        height: 100%;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 2px 0 3px #dddddd;
+        display: none;
+        padding: 0;
+    }
+    .subnav-wrap {
+        height: 100%;
+    }
+
+    #player-panel #name {
+        width: 120px;
+    }
+
+    #player-panel #stop{
+        display: none;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .subnav-row {
+        width: 50%;
+        height: 100%;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 2px 0 3px #dddddd;
+        display: none;
+        padding: 0;
+    }
+    .subnav-wrap {
+        height: 100%;
+    }
+}
+
+/* md */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+
+}

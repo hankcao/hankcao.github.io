@@ -1,0 +1,22 @@
+{
+    "length": {{ site.categories | size }},
+    "items":[
+        {% for category in site.categories %}
+        {
+            "title": "{{ category | first }}",
+            "length": {{ category | last | size }},
+            "items": [
+                {% for post in category.last %}
+                {
+                    "title": "{{ post.title }}",
+                    "date" : "{{ post.date | date:'%Y-%m-%d' }}",
+                    "url"  : "{{ site.base_path }}{{ post.url }}"
+                }
+                {% if forloop.last == false %},{% endif %}
+                {% endfor %}
+            ]
+        }
+        {% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ]
+}

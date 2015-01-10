@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" 
+        type="text/css" 
+        href="{{ site.cdnurl }}/web/plugins/kindeditor/themes/default/default.css">
+    <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #ddd; 
+    }
+    .wrap {
+      width: 768px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    textarea[name="content"] {
+      width: 100%;
+      height: 99%;
+      margin: 0 auto;
+      padding: 0;
+      border: none;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <textarea name="content">start your writing...</textarea>
+    </div>
+    <script src="{{ site.cdnurl }}/web/plugins/kindeditor/kindeditor-all-min.js"></script>
+    <script type="text/javascript">
+      KindEditor.ready(function(K) {
+        K.create('textarea[name="content"]');
+      });
+    </script>
+  </body>
+</html>

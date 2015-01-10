@@ -1,0 +1,23 @@
+<ul class="list-group" id="blog-tags-wrap">
+    <li class="list-group-item" id="blog-tags-title">
+        <i class="glyphicon glyphicon-tags"></i>&nbsp;
+        <b>标签</b>
+        <i class="glyphicon glyphicon-chevron-up pull-right toggle-icon"></i>
+    </li>
+    <li class="list-group-item tag-cloud" id="blog-tags-cloud"></li>
+</ul>
+<script type="text/javascript">
+    var blog_tags = [
+        {% for tag in site.tags %}
+        {
+            "text"  : "{{ tag | first }}",
+            "weight": {{ tag | last | size }},
+            "link"  : {
+                "title" : "{{ tag | first }} [{{ tag | last | size }}]",
+                "href": "{{ site.base_path }}/blog/?type=tag&value={{ tag | first }}"
+            }
+        }
+        {% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ];
+</script>
